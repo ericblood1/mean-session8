@@ -1,0 +1,8 @@
+<div class="alert alert-danger" ng-show="load_error_text">
+	<p>{{page_loading_error}}<p>
+</div>
+<h3>{{portfolio.name}}</h3>
+<div class="photo thumbnail" ng-repeat="portfolio in portfolios">
+	<img src="/media/{{portfolio_name}}/thumb/{{portfolio.filename}}" />
+	<p>{{portfolio.description}}</p>
+</div>	
